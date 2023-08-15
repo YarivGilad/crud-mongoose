@@ -8,4 +8,5 @@ export const connect_db = async uri => {
     };
     await mongoose.connect(uri,options)
     log.magenta(' ✨  Connected to Mongo DB ✨ ')
+    log.magenta(' ✨  Mongo URI: ✨ ' + uri)
 }
